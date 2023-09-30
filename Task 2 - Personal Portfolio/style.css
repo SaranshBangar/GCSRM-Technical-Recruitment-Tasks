@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta&family=Raleway:wght@200&display=swap');
+
+/* CSS - Main Section */
+
+body
+{
+     background-color: black;
+     height: 100vh;
+}
+
+nav
+{
+     background-color: black;
+     position: fixed;
+     display: flex;
+     flex-direction: row-reverse;
+     top: 0; 
+     right: 0; 
+     width: 100%;
+     z-index: 3;
+}
+
+.navBarLinks
+{
+     
+     width: 150px;
+     text-align: center;
+     font-family: 'Mukta', sans-serif;
+     font-size: 25px;
+     text-shadow: 1px 1px 10px;
+}
+
+.navBarLinkAnchorTag
+{
+     text-decoration: none;
+     color: white;
+     margin-right: 28px;
+
+     transition: all 0.1s ease-in-out;
+}
+
+.navBarLinkAnchorTag:hover
+{
+     color: yellow;
+}
+
+#main-section
+{
+     position: relative;
+
+     display: flex;
+     align-items: center;
+}
+
+.profilePicture
+{
+     margin: 7% 20%;
+     height: 400px;
+     width: 380px;
+     border-radius: 30% 30% 5% 5%;
+}
+
+.name
+{
+     position: relative;
+     margin-right: 15%;
+     display: flex;
+     flex-direction: column;
+}
+
+.saransh
+{
+     font-family: 'Mukta', sans-serif;
+     color: red;
+     font-size: 115px;
+     text-align: right;
+     margin: 0;
+     height: 90px;
+}
+
+.bangar
+{
+     font-family: 'Mukta', sans-serif;
+     color: white;
+     font-size: 100px;
+     text-align: right;
+     margin: 0;
+     height: 35px;
+}
+
+.hr
+{
+     border-top: 2px solid white;
+}
+
+/* CSS - Body */
+
+#aboutHeading, #skillsHeading, #contactHeading
+{
+     text-align: center;
+     font-size: 40px;
+     color: #ffff80;
+     font-family: 'Mukta', sans-serif;
+}
+
+.aboutTable
+{
+     text-align: center;
+     margin: 0 auto;
+     width: 80%;
+}
+
+.aboutImage
+{
+     width: 400px;
+     height: 225px;
+}
+
+.aboutPara
+{
+     color: white;
+     font-family: 'Mukta', sans-serif;
+     font-size: 30px;
+}
+
+.skillsTable
+{
+     margin: 0 auto;
+     width: 60%;
+}
+
+.skillsImage
+{
+     width: 400px;
+     height: 300px;
+     margin-left: 28%;
+}
+
+#contactImages
+{
+     display: flex;
+     flex-direction: row;
+     justify-content: space-around;
+}
+
+.contactImage
+{
+     width: 250px;
+     height: 250px;
+}
+
+/* CSS - Footer */
+
+.footerPara
+{
+     text-align: center;
+     color: white;
+     font-family: 'Mukta', sans-serif;
+     font-size: 15px;
+}
