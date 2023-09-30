@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@500&family=Mukta&family=Raleway:wght@200;500&family=Ubuntu&display=swap');
+
+*
+{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+body
+{
+     width: 100vw;
+     height: 100vh;
+     background-color: #8BC6EC;
+     background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+}
+
+.mainDiv
+{
+     width: 450px;
+     border-radius: 10px;
+     background-color: #F8F8FF;
+     box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+.mainHeading
+{
+     margin: 15px;
+     font-family: 'Ubuntu', sans-serif;
+}
+
+.inputTakingDiv
+{
+     margin: 15px;
+     margin-bottom: 25px;
+     width: 420px;
+     height: 35px;
+
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+}
+
+.userInputText
+{
+     width: 300px;
+     height: 35px;
+     border-radius: 5px;
+     font-family: 'Raleway', sans-serif;
+     font-size: 20px;
+     transition: all 0.1s;
+}
+
+.userInputText:focus
+{
+     border: 5px solid #3498db; 
+     box-shadow: 0 0 5px rgba(41, 128, 185, 0.5);
+}
+
+::placeholder 
+{
+     color: brown;
+     opacity: 1;
+     font-size: 20px;
+}
+
+:-ms-input-placeholder 
+{
+     color: brown;
+     opacity: 1;
+     font-size: 20px;
+}
+   
+::-ms-input-placeholder 
+{
+     color: brown;
+     opacity: 1;
+     font-size: 20px;
+}
+
+.userInputButton
+{
+     height: 35px;
+     width: 85px;
+     border-radius: 20px;
+     font-family: 'Raleway', sans-serif;
+     font-size: 20px;
+     background-color: #ADD8E6;
+
+     transition: all 0.2s;
+}
+
+.userInputButton:hover
+{
+     background-color: #86c5da;
+}
+
+.taskListContainer 
+{
+     margin: 15px;
+     width: 450px;
+}
+ 
+.task-list 
+{
+     list-style-type: none;
+     padding: 0;
+     height: fit-content;
+}
+ 
+.task-list li 
+{
+     font-size: 19px;
+     margin: 5px 0;
+     padding: 5px;
+     background-color: #FFF;
+     border-radius: 5px;
+     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+     font-family: 'Raleway', sans-serif;
+
+     display: flex;
+     align-items: center;
+}
+ 
+ .task-list li span 
+{
+     flex-grow: 1;
+}
+ 
+.task-list li button 
+{
+     margin-left: 10px;
+     padding: 5px 10px;
+     border: none;
+     border-radius: 5px;
+     cursor: pointer;
+     color: #fff;
+     width: 70px;
+     height: 30px;
+     font-size: 16px;
+}
+ 
+.editTask 
+{
+     background-color: #3498db;
+     color: #fff;
+}
+ 
+.deleteTask 
+{
+     background-color: #e74c3c;
+     color: #fff;
+}
+
+@media (min-width: 481px) and (max-width: 768px)
+{
+     body 
+     {
+          background-color: #E6E6E6;
+          flex-direction: column;
+     }
+ 
+     .mainDiv 
+     {
+          width: 90%;
+     }
+
+     .inputTakingDiv
+     {
+          margin: 10px;
+          margin-bottom: 25px;
+          width: 350px;
+          height: 35px;
+
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+     }
+ 
+     .userInputText 
+     {
+          width: auto;
+     }
+
+     .taskListContainer
+     {
+          width: 90%;
+     }
+}
+
+@media (min-width: 320px) and (max-width: 480px)
+{
+     body 
+     {
+          background-color: #E6E6E6;
+          flex-direction: column;
+     }
+ 
+     .mainDiv 
+     {
+          width: 90%;
+     }
+
+     .inputTakingDiv
+     {
+          margin: 10px;
+          margin-bottom: 25px;
+          width: 350px;
+          height: 35px;
+
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          flex-direction: column;
+     }
+ 
+     .userInputText 
+     {
+          width: auto;
+          margin: 20px 10px 10px 10px;
+     }
+
+     .userInputButton
+     {
+          margin-bottom: 10px;
+     }
+
+     .taskListContainer
+     {
+          width: 90%;
+     }
+} 
